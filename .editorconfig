@@ -1,0 +1,7 @@
+root = true
+
+[*.{html,css,js,yaml,json,toml}]
+charset = utf-8
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true

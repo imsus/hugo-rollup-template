@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  {{ if eq hugo.Environment "production" }}
+    <style>{{ partialCached "css/main.css" . | safeCSS }}</style>
+  {{ else }}
+    <link rel="stylesheet" href="/css/main.css">
+  {{ end }}
+</head>
+<body class="antialiased min-h-screen bg-gray-100 leading-none">
+  {{ block "content" . }}{{ end }}
+  <script type="module" src="/js/main.js"></script>
+  <script nomodule src="/js/main-legacy.js"></script>
+
+  <script type="module">
+    import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/5.0.0/workbox-window.prod.mjs';
+
+    if ('serviceWorker' in navigator) {
+      const wb = new Workbox('/sw.js');
+
+      wb.register();
+    }
+  </script>
+</body>
+</html>
