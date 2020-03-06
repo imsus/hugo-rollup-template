@@ -134,10 +134,10 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
-alpinejs@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-2.0.2.tgz#7f21f550b9ad389d788b6233d48dc3602202e585"
-  integrity sha512-8e3kij6PiMhbzN35uHDFZ7K5W6kRJxrHT4SeKnnSO2crZuaN1cg1niHzkJ5X9s6Aqzh0vFDvbDJ706G151uf/g==
+alpinejs@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/alpinejs/-/alpinejs-2.1.0.tgz#22919b03928f0890ef1c6388eaf695b8accff356"
+  integrity sha512-8cExuIrXTlac8MNFgq6khqv0wOWPRBQ+wEpLrC3wYm+39xxK8sHlqOJbGaj3iaMnUMsO7bRO/PBr7Oc3Z1zd6A==
 
 ansi-regex@^2.0.0:
   version "2.1.1"
